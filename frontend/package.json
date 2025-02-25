@@ -10,14 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^6.4.5",
+    "@mui/material": "^6.4.5",
     "axios": "^1.7.9",
     "http-status": "^2.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0",
     "react-scripts": "^5.0.1",
-    "socket.io-client": "^4.8.1"
+    "socket.io-client": "^4.8.1",
+    "web-vitals": "^4.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
@@ -32,3 +37,4 @@
     "vite": "^6.1.0"
   }
 }
+

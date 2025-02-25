@@ -1,29 +1,38 @@
 import React from 'react'
 import "../App.css"
 import { Link, useNavigate } from 'react-router-dom'
-export default function LandingPage() {
 
 
-    const router = useNavigate();
+const LandingPage = () => {
 
-    return (
-        <div className='landingPageContainer'>
+  const navigate = useNavigate();
+
+
+
+  return (
+    <div className='landingPageContainer'>
             <nav>
                 <div className='navHeader'>
                     <h2> Video Call</h2>
                 </div>
                 <div className='navlist'>
-                    <p onClick={() => {
-                        router("/aljk23")
-                    }}>Join as Guest</p>
-                    <p onClick={() => {
-                        router("/auth")
+                    <p 
+                    onClick={() => {
+                        navigate("/aljk23")
+                    }}
+                    >Join as Guest</p>
+                    <p 
+                    onClick={() => {
+                        navigate("/auth")
 
-                    }}>Register</p>
-                    <div onClick={() => {
-                        router("/auth")
+                    }}
+                    >Register</p>
+                    <div 
+                    onClick={() => {
+                        navigate("/auth")
 
-                    }} role='button'>
+                    }} 
+                    role='button'>
                         <p>Login</p>
                     </div>
                 </div>
@@ -49,5 +58,7 @@ export default function LandingPage() {
 
 
         </div>
-    )
+  )
 }
+
+export default LandingPage;
